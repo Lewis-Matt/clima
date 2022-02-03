@@ -1,0 +1,100 @@
+/* Smaller height on mobile*/
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: #292929;
+}
+
+/* Larger height on desktop*/
+@media screen and (min-width: 992px) {
+    #map {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+#main-container {
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    /* Set >= to the height of the footer */
+    padding-bottom: 2.5em;
+}
+
+/* Fixed to bottom */
+footer {
+    position: absolute;
+    height: 2em;
+    bottom: 0;
+    width: 100%;
+}
+
+#current-weather {
+    background-color: #fff;
+}
+
+#five-day-container {
+    background-color: #fff;
+}
+
+
+#geocoder-search {
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.25em;
+}
+
+.mapboxgl-ctrl-geocoder {
+    border: solid darkgrey 2px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
+.card-header {
+    font-size: 1.25em;
+    background-color: #242424 !important;
+}
+
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+.row {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.col {
+    padding: 0;
+}
+
+#clock {
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    letter-spacing: 5px;
+}
+.hi {
+    color: #ab7b18;
+}
+.lo {
+    color: #4d8bab;
+}
+#date-time-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
